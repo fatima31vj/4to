@@ -1,0 +1,21 @@
+# Programa que indica si un número es positivo o negativo
+# y cuenta cuántos de cada uno se ingresaron
+
+positivos = 0
+negativos = 0
+
+numero = int(input("Ingresa un número (0 para salir): "))
+
+while numero != 0:
+    if numero > 0:
+        print("El número es positivo.")
+        positivos += 1
+    else:
+        print("El número es negativo.")
+        negativos += 1
+
+    numero = int(input("Ingresa otro número (0 para salir): "))
+
+print("¡Programa terminado!")
+print(f"Cantidad de números positivos: {positivos}")
+print(f"Cantidad de números negativos: {negativos}")
