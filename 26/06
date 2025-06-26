@@ -1,6 +1,6 @@
 
 
-#Consigna 1
+EJERCICIO 1
 
 numeros = [1, 3, -4, -2, 6, 4, -6, 8, -8]
 contador_negativos = 0
@@ -13,7 +13,7 @@ print("Cantidad de números negativos:", contador_negativos)
 
 
 
-#consigna 2
+EJERCICIO 2
 
 vida = 100
 golpes = 0
