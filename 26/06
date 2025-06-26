@@ -1,27 +1,45 @@
 
 
-EJERCICIO 1
+EJERCICIO 1:
 
+# Se crea la lista de números
 numeros = [1, 3, -4, -2, 6, 4, -6, 8, -8]
+
+# Inicia un contador para contar cuántos números negativos hay
 contador_negativos = 0
 
 for numero in numeros:
+    # Si el número es menor que 0, es negativo
     if numero < 0:
+        # Se suma el contador de negativos en 1
         contador_negativos += 1
 
+# Muestra cuantos números negativos hay 
 print("Cantidad de números negativos:", contador_negativos)
 
 
 
-EJERCICIO 2
+EJERCICIO 2:
 
+#Inicia con 100 de vida 
 vida = 100
+
+# Inicia el contador de golpes en 0
 golpes = 0
 
+# Si la vida es 100mayor a 0, el personaje sigue recibiendo ataques
 while vida > 0:
+    # Pedimos al usuario cuántos puntos de daño recibió en ese golpe
     daño = int(input("¿Cuántos puntos de daño recibió? "))
+    
+    # Le restamos ese daño a la vida del personaje
     vida -= daño
+    
+    # Sumamos 1 al contador de golpes
     golpes += 1
 
+# Cuando sale del while (vida <= 0), mostramos que el personaje murió
 print("El personaje murió.")
+
+# Mostramos cuántos golpes recibió antes de morir
 print("Cantidad de golpes recibidos:", golpes)
