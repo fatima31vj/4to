@@ -1,0 +1,27 @@
+
+
+#Consigna 1
+
+numeros = [1, 3, -4, -2, 6, 4, -6, 8, -8]
+contador_negativos = 0
+
+for numero in numeros:
+    if numero < 0:
+        contador_negativos += 1
+
+print("Cantidad de números negativos:", contador_negativos)
+
+
+
+#consigna 2
+
+vida = 100
+golpes = 0
+
+while vida > 0:
+    daño = int(input("¿Cuántos puntos de daño recibió? "))
+    vida -= daño
+    golpes += 1
+
+print("El personaje murió.")
+print("Cantidad de golpes recibidos:", golpes)
